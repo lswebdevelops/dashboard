@@ -1,7 +1,220 @@
-body{
-    background-color: wheat;
+
+/* Begin of reseting browser default  */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
-*{
-    border: solid firebrick 1px;
-   
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of reseting browser default  */
+
+
+
+
+
+
+/*  SINGLE CATEGORY PAGE */
+
+:root{
+    --main-backgroundColor:rgb(25, 146, 212);
+    --main-backgroundRightColor:rgb(226, 232, 240);
+    --main-fontFamily: 'Signika Negative', sans-serif;
+    --main-borderColor:rgb(240,180,41);
+}
+
+html{
+    font-family: var(--main-fontFamily);
+    font-weight: 300;
+}
+.leftSide{
+    background-color: var(--main-backgroundColor);
+    color: white;
+}
+
+.iconLinksLeft img{
+    height:  30px;
+}
+
+
+.leftSide{
+     
+    font-size: 2rem;
+    font-weight: 500;
+}
+.leftSide h1{
+    font-size: 2.5rem;
+    padding-top: 25px;
+}
+.dashboardCont{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+
+}
+.dashboard{
+    height: 50px;
+    padding: 1rem 1rem 0 1rem;
+  }
+.linkUpContainer, .linkDownContainer{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-gap: 15px;
+}
+.leftSide .iconLinksLeft{
+    padding-left: 1rem;
+}
+.linkDownContainer, .linkUpContainer{
+    padding-top: 3rem;
+}
+.leftLinks:hover{
+    background-color: rgb(15, 136, 202);
+    padding-left: 5px;
+    cursor:pointer;
+    border-radius: 5px;
+}
+/* end of left side  */
+
+
+/* starting the right side styling */
+.rightSide{
+    background-color: var(--main-backgroundRightColor);   
+   }
+   .nav{
+       background-color: white;
+   }
+
+.container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+}
+
+input{
+    border: none;
+}
+
+
+
+
+
+
+.upperRight{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-template-columns: 1fr 6fr 1fr 1fr 2fr;
+    font-size: 1.5rem;
+    font-weight: 400;
+padding-bottom: 50px;
+}
+.greetings{
+    font-size: 2rem;
+    font-weight: 400;
+
+}
+
+.upperRight{
+    padding-top: 12px;
+    }
+.pictureUser img{
+    border-radius: 50%;
+    height: 60px;
+}
+.pictureUserGreeting img{
+    border-radius: 50%;
+    height: 75px;
+}
+
+   .upperButtons button{
+   background-color: var(--main-backgroundColor);
+   border-radius: 25px;
+   width: 150px;
+   height: 50px;
+   text-align: center;
+   color: white; 
+   font-size: 1.4rem;
+   font-weight: 400;
+   border: solid white 1px;
+   }
+
+   .upperButtons button:hover{
+    background-color: rgb(15, 136, 202);
+    padding-left: 5px;
+    cursor:pointer;
+ translate: 4px ;
+}
+
+.upperRight2{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}.upperButtonsContainer{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    padding-left: 55px;
+    align-items: center;
+    }
+
+.greetings{
+display: grid;
+grid-template-columns:repeat(4, 1fr);
+grid-template-rows: repeat(2, 1fr);
+align-items: center;
+grid-template-areas: 
+"user message message message"
+"user name name name";
+}
+.messageGreeting{
+    font-size: 1.5rem;
+    grid-area: message;
+    }
+.pictureUserGreeting{
+    grid-area: user;
+}
+.nameGreeting{
+    grid-area: name;
+}
+.nav{
+    padding-bottom: 3rem;
+    box-shadow: 5px 10px 8px 10px #c9c9c9;
 }

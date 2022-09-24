@@ -4,57 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/8e7c30ddfb.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400&display=swap" rel="stylesheet">
     <title>Dashboard</title>
 </head>
 <body>
     
 <div class="container">
     <div class="leftSide">
-        <h1>Dashboard</h1>
-        <div class="linkUpContainer">
-            <div class="iconLinksLeft">🏠</div>
-            <div class="leftLinks">Home</div>
-            <div class="iconLinksLeft">📽</div>
-            <div class="leftLinks">Profile</div>
-            <div class="iconLinksLeft">🗨</div>
-            <div class="leftLinks">Messages</div>
-            <div class="iconLinksLeft">⌚</div>
-            <div class="leftLinks">History</div>
-           <div class="iconLinksLeft">📃</div>
-            <div class="leftLinks">Tasks</div>
-            <div class="iconLinksLeft">🐤🐥</div>
-            <div class="leftLinks">Communities</div>
+        <div class="dashboardCont">
+            <img class="dashboard" src="https://img.icons8.com/material-outlined/24/FFFFFF/dashboard-layout.png"/>
+        <h1> Dashboard</h1>
+
+        </div>
+
+        <div class="linkUpContainer">            
+            <div class="iconLinksLeft"><img src="https://img.icons8.com/material/24/FFFFFF/home--v5.png"/></div>
+            <div class="leftLinks">Home <link href="#"></div>
+            <div class="iconLinksLeft"><img src="https://img.icons8.com/material-outlined/24/FFFFFF/user-menu-female.png"/></div>
+            <div class="leftLinks">Profile <link href="#"></div>
+            <div class="iconLinksLeft"><img src="https://img.icons8.com/material-sharp/24/FFFFFF/filled-chat.png"/></div>
+            <div class="leftLinks">Messages <link href="#"></div>
+            <div class="iconLinksLeft"><img src="https://img.icons8.com/ios-glyphs/30/FFFFFF/clock--v1.png"/></div>
+            <div class="leftLinks">History <link href="#"></div>
+           <div class="iconLinksLeft"><img src="https://img.icons8.com/small/16/FFFFFF/todo-list.png"/></div>
+            <div class="leftLinks">Tasks <link href="#"></div>
+            <div class="iconLinksLeft"><img src="https://img.icons8.com/sf-ultralight-filled/25/FFFFFF/group-foreground-selected.png"/></div>
+            <div class="leftLinks">Communities <link href="#"></div>
         </div>
        <div class="linkDownContainer">
-        <div class="iconLinksLeft">⚙</div>
-        <div class="leftLinks">Settings</div>
-        <div class="iconLinksLeft">🆘</div>
-        <div class="leftLinks">Support</div>
-        <div class="iconLinksLeft">🔐</div>
-        <div class="leftLinks">Privacy</div>
+        <div class="iconLinksLeft"><img src="https://img.icons8.com/material-sharp/24/FFFFFF/settings.png"/></div>
+        <div class="leftLinks">Settings <link href="#"></div>
+        <div class="iconLinksLeft"><img id="support" src="https://img.icons8.com/glyph-neue/64/FFFFFF/customer-support.png"/></div>
+        <div class="leftLinks">Support <link href="#"></div>
+        <div class="iconLinksLeft"><img src="https://img.icons8.com/external-anggara-glyph-anggara-putra/32/FFFFFF/external-privacy-social-media-interface-anggara-glyph-anggara-putra.png"/></div>
+        <div class="leftLinks">Privacy <link href="#"></div>
        </div>
     </div>  <!-- end left side -->
+
     <div class="rightSide">
+        <div class="nav">
         <div class="upperRight">
-            <div class="looking">🔍</div>
-            <div class="spaceForSearch">space here for search</div>
-            <div class="pictureRing">🔔</div>
-            <div class="pictureUpper">🐱</div>
+            <div class="looking"><img src="https://img.icons8.com/external-bartama-glyph-64-bartama-graphic/64/1A1A1A/external-glass-user-interface-glyph-bartama-glyph-64-bartama-graphic.png"/></div>
+            <div class="spaceForSearch">
+                <form>
+                    <label for="search"></label>
+                    <input type="text" id="search" name="search" placeholder="search">                    
+                  </form>
+            </div>
+            <div class="pictureRing"><img src="https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/64/1A1A1A/external-bell-shopping-and-ecommerce-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png"/></div>
+            <div class="pictureUser"><img src="images/luciano.png"></div>
             <div class="upperName">Luciano Sardanha</div>
         </div>
-       <div class="nav">
-        <div class="greeting">
-            <div class="pictureGreeting">🐱</div>
+      
+     <div class="upperRight2">
+        <div class="greetings">
+            <div class="pictureUserGreeting"><img src="images/luciano.png"></div>
             <div class="messageGreeting">Hi there,</div>
-            <div class="nameGreeting">Luciano Sardanha(@sardanha)</div>
+            <div class="nameGreeting">Luciano Sardanha (@sardanha)</div>
         </div>
         <div class="upperButtonsContainer">
-            <div class="upperButtons">New</div>
-            <div class="upperButtons">Upload</div>
-            <div class="upperButtons">Share</div>
+            <div class="upperButtons"><button>New</button></div>
+            <div class="upperButtons"><button>Upload</button></div>
+            <div class="upperButtons"><button>Share</button></div>
         </div>
+
+     </div>
        </div>
 
        <div class="projects">
