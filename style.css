@@ -262,9 +262,24 @@ grid-template-areas:
     border-left: solid 8px var(--main-borderColor);
     border-radius: 14px;
     padding: 23px;
-    height: 200px;
+    }
+
+
+.iconsContainer{
+    display: flex;
+    justify-content: end;
+/* align-items: end; */
 
 }
+.iconsContainer .icons{
+    padding-top: 150px;
+    width: 75px;
+    display: flex;
+        border: solid firebrick 1px;
+
+}
+
+
 
 .announcements{
     grid-area:anoun;
