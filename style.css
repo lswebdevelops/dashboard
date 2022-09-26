@@ -269,13 +269,13 @@ grid-template-areas:
     display: flex;
     justify-content: end;
 /* align-items: end; */
+gap: 53px;
 
 }
 .iconsContainer .icons{
     padding-top: 150px;
-    width: 75px;
     display: flex;
-        border: solid firebrick 1px;
+    height: 3rem;
 
 }
 
@@ -306,6 +306,7 @@ grid-template-areas:
 
 .trending{
   grid-area: trend;
+  padding: 23px;
 }
 
 .trendDiv{
@@ -331,7 +332,7 @@ grid-template-areas:
 .pTrend{
     padding-bottom: 2rem;
 }
-.iconTrend img{
-   height: 2rem;
+.trendingAvatar img{
+   height: 3rem;
 }
 
