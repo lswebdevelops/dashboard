@@ -57,7 +57,17 @@ table {
 
 
 /*  SINGLE CATEGORY PAGE */
-
+h1, h2{
+    font-weight: bold;
+    font-size: larger;
+}
+p{
+    font-size: large;
+    /* letter-spacing: 2px; */
+}
+.textTrend h2{
+    font-weight: 500;
+}
 :root{
     --main-backgroundColor:rgb(25, 146, 212);
     --main-backgroundRightColor:rgb(226, 232, 240);
@@ -72,6 +82,7 @@ html{
 .leftSide{
     background-color: var(--main-backgroundColor);
     color: white;
+    height: 1050px;
 }
 
 .iconLinksLeft img{
@@ -133,7 +144,6 @@ html{
 input{
     border: none;
 }
-
 
 
 
@@ -218,3 +228,95 @@ grid-template-areas:
     padding-bottom: 3rem;
     box-shadow: 5px 10px 8px 10px #c9c9c9;
 }
+/* styling the three  bottom Divs : projects, announcments and trending */
+
+.bottomDivs{
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas: 
+    "projects projects projects  anoun"
+    "projects projects  projects anoun"
+    "projects projects projects  anoun"
+    "projects projects projects  trend"
+    "projects projects projects  trend"
+    "projects projects projects  trend"
+    "projects projects  projects trend"
+
+ ;
+}
+.projects{
+    padding-right: 204px;
+    padding: 25px;
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 25px 1fr 1fr 1fr;
+    gap: 25px;
+    }
+.projects h1{
+    font-size:2rem;
+     
+}
+.project{
+    background-color: white;
+    border-left: solid 8px var(--main-borderColor);
+    border-radius: 14px;
+    padding: 23px;
+    height: 200px;
+
+}
+
+.announcements{
+    grid-area:anoun;
+    padding: 23px;
+
+}
+.announcements h1, .trending h1{
+    font-size:2rem;
+    padding-bottom: 23px;
+      
+}
+.announcements div, .trending div{
+    background-color: white;
+    border-radius: 14px;
+    padding: 23px;
+
+}
+.anounDivP1, .anounDivP2{
+      border-bottom: #c9c9c9 solid 1px;
+      padding-bottom: 12px;
+}
+
+
+
+.trending{
+  grid-area: trend;
+}
+
+.trendDiv{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: repeat(4, 85px);
+    grid-template-areas:
+    "trendAreaIcon trendAreaText trendAreaText"
+    "trendAreaIcon trendAreaText trendAreaText"
+    "trendAreaIcon trendAreaText trendAreaText"
+    "trendAreaIcon trendAreaText trendAreaText"
+    
+    ;
+}
+
+.iconTrend{
+    grid-area:trendAreaIcon;
+    }
+.textTrend{
+    grid-area:trendAreaText;
+      
+}
+.pTrend{
+    padding-bottom: 2rem;
+}
+.iconTrend img{
+   height: 2rem;
+}
+
