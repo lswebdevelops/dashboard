@@ -343,7 +343,9 @@ gap: 33px;
 
 }
 
-
+.iconBtn{
+    display: none;
+}
 
 /* END SINGLE CATEGORY PAGE */
 /********** Large devices only **********/
@@ -366,21 +368,198 @@ gap: 33px;
         "projects projects projects  projects"
         "projects projects  projects projects"
         "anoun anoun trend trend"
-
-    
+   
      ;
     }
+
+    .upperButtons button{
+        width: 125px;
+    }
+.nameGreeting{
+    font-size: 1.5rem;
+}
+
 }
 
 /********** Small devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
    
+    .bottomDivs{
+        grid-template-columns:  1fr;
+        display: grid;
+        grid-template-areas: 
+        "projects  "
+        "anoun "
+        "trend "
+   
+     ;
+    }
+
+    .upperButtons .wordIcon{
+    display: none;    
+      
+
+    }
+    .upperRight2{
+        grid-template-columns: 4fr 1fr;
+    }
+    .upperButtonsContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .upperButtons button{
+        background-color: transparent;
+        width: 50px;
+    }
+    .iconBtn{
+            display: contents;
+        }
+    
+.nameGreeting{
+    font-size: 1.5rem;
+}
+.project{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(auto, minmax(1fr, 150px));
+
+}
+.linkUpContainer, .linkDownContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.leftLinks{
+    display: none;
+   }
+
+.dashboardCont{
+    display: grid;
+   grid-template-columns: 1fr;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
 }
 /********** Extra small devices only **********/
 @media (max-width: 767px) {
+    
+    .bottomDivs{
+        grid-template-columns:  1fr;
+        display: grid;
+        grid-template-areas: 
+        "projects  "
+        "anoun "
+        "trend "
+   
+     ;
+    }
+
+    .upperButtons .wordIcon{
+    display: none;    
+      
+
+    }
+    .upperRight2{
+        grid-template-columns: 2fr 1fr;
+    }
+    .upperButtonsContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .upperButtons button{
+        background-color: transparent;
+        width: 50px;
+    }
+    .iconBtn{
+            display: contents;
+        }
+    
+.nameGreeting{
+    font-size: 1.5rem;
+}
+.project{
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(auto, minmax(1fr, 150px));
+
+}
+.linkUpContainer, .linkDownContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.leftLinks{
+    display: none;
+   }
+
+.dashboardCont{
+    display: grid;
+   grid-template-columns: 1fr;
+}
+.container{
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+}
+
+.pictureUser{
+    display: none;
+}
+.nameGreeting{
+    font-size: 1.2rem;
+}
+input{
+    width: 85%;
+}
+.pictureRing img, .looking img{
+    width: 30px;
+}
+
+.projects{
+display: grid;
+grid-template-columns: 1fr;
+}
+.project{
+    width: 90%;
+}
+.iconsContainer .icons img{
+   width: 35%;
+   
+}
+.iconsContainer .icons img:hover{
+   scale: 1;
+}
+
+
+
+*{
+    background-color: grey
+};
 }
   
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
 @media (max-width: 479px) {
+   .leftLinks{
+    display: none;
+   }
+    .upperButtonsContainer{
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+    .upperButtons button{
+        background-color: transparent;
+        width: 50px;
+    }
+    .iconBtn{
+            display: contents;
+        }
+    
+.nameGreeting{
+    font-size: 1.5rem;
+}
+
   
 }
+
