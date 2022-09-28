@@ -260,39 +260,56 @@ grid-template-areas:
  ;
 }
 .projects{
-    padding-right: 204px;
     padding: 25px;
     grid-area: projects;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 25px 1fr 1fr 1fr;
     gap: 20px;
+    grid-template-columns: 500px;
+      grid-template-areas: 
+    "h1Project            h1Project"
+    "project1              project1"
+    "iconsContainer  iconsContainer"
+    
+     ; 
     }
-.projects h1{
-    font-size:2rem;
-     
+ .h1Project{
+    grid-area: h1Project;
+   
 }
 .project{
-    background-color: white;
+    grid-area: project1;
+    
+}
+.iconsContainer{
+    grid-area: iconsContainer;
+    
+} 
+
+
+.projects h1{
+    font-size:2rem;
+}
+.project{
+    background-color: yellow;
     border-left: solid 8px var(--main-borderColor);
     border-radius: 14px;
-    padding: 23px;
-    }
+    padding: 23px;  
+ }
 
 
-.iconsContainer{
+ .iconsContainer{
     display: flex;
-    justify-content: end;
-/* align-items: end; */
-gap: 33px;
+           gap: 33px;
+    border: solid firebrick 1px;
 
 }
+
 .iconsContainer .icons{
-    padding-top: 150px;
+   
     display: flex;
     height: 3rem;
-
-}
+   
+} 
 
 
 
@@ -367,7 +384,7 @@ gap: 33px;
         "projects projects projects  projects"
         "projects projects projects  projects"
         "projects projects  projects projects"
-        "anoun anoun trend trend"
+        "anoun     anoun     trend      trend"
    
      ;
     }
@@ -483,7 +500,7 @@ gap: 33px;
 .project{
     display: grid;
     grid-template-columns: 250px;
-    grid-template-rows: repeat(auto, minmax(1fr, 150px));
+    grid-template-rows: repeat(auto, minmax(1fr, 50px));
 
 }
 .linkUpContainer, .linkDownContainer{
