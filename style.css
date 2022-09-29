@@ -248,6 +248,7 @@ grid-template-areas:
 .bottomDivs{
     grid-template-columns:  1fr 1fr 1fr 1.2fr;
     display: grid;
+  
     grid-template-areas: 
     "projects projects projects  anoun"
     "projects projects  projects anoun"
@@ -259,57 +260,37 @@ grid-template-areas:
 
  ;
 }
+/* starting projects */
 .projects{
-    padding: 25px;
-    grid-area: projects;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 500px;
-      grid-template-areas: 
-    "h1Project            h1Project"
-    "project1              project1"
-    "iconsContainer  iconsContainer"
+   grid-area: projects;
+
+}
+
+.h1Project{
     
-     ; 
-    }
- .h1Project{
-    grid-area: h1Project;
-   
+    font-size: 2rem;
+    padding: 15px 0 0 23px;
 }
 .project{
-    grid-area: project1;
+   border-left: solid orange 8px ;
+   padding: 20px 23px 20px 23px;
+   background-color: white;
+}
+.rowsProject{
+    display: grid;
+    grid-template-columns: repeat(2,  minmax(250px, 650px));;
+   gap: 32px;
+   padding: 33px;
     
 }
 .iconsContainer{
-    grid-area: iconsContainer;
-    
-} 
-
-
-.projects h1{
-    font-size:2rem;
-}
-.project{
-    background-color: yellow;
-    border-left: solid 8px var(--main-borderColor);
-    border-radius: 14px;
-    padding: 23px;  
- }
-
-
- .iconsContainer{
-    display: flex;
-           gap: 33px;
-    border: solid firebrick 1px;
-
-}
-
-.iconsContainer .icons{
-   
-    display: flex;
-    height: 3rem;
-   
-} 
+    display: grid;
+    grid-template-columns: repeat(3, 30px);
+    justify-content: end;
+    padding: 15px 15px 15px 0;
+    border-left: solid orange 8px ;
+     background-color: white;
+    }
 
 
 
@@ -338,7 +319,7 @@ grid-template-areas:
 
 .trending{
   grid-area: trend;
-  padding: 10px;
+  padding: 23px;
 }
 
 .textTrend{
@@ -436,12 +417,7 @@ grid-template-areas:
 .nameGreeting{
     font-size: 1.5rem;
 }
-.project{
-    display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: repeat(auto, minmax(1fr, 150px));
 
-}
 .linkUpContainer, .linkDownContainer{
     display: grid;
     grid-template-columns: 1fr;
@@ -472,7 +448,11 @@ grid-template-areas:
    
      ;
     }
+    .rowsProject{
+            
+        grid-template-columns:  1fr;
 
+}
     .upperButtons .wordIcon{
     display: none;    
       
@@ -497,12 +477,7 @@ grid-template-areas:
 .nameGreeting{
     font-size: 1.5rem;
 }
-.project{
-    display: grid;
-    grid-template-columns: 250px;
-    grid-template-rows: repeat(auto, minmax(1fr, 50px));
 
-}
 .linkUpContainer, .linkDownContainer{
     display: grid;
     grid-template-columns: 1fr;
@@ -533,26 +508,7 @@ input{
     width: 30px;
 }
 
-.projects{
-display: grid;
-grid-template-columns: 1fr;
-}
-.project{
-    width: 90%;
-}
-.iconsContainer .icons img{
-   width: 35%;
-   
-}
-.iconsContainer .icons img:hover{
-   scale: 1;
-}
 
-
-
-*{
-    background-color: grey
-};
 }
   
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
@@ -577,6 +533,23 @@ grid-template-columns: 1fr;
     font-size: 1.5rem;
 }
 
-  
+  .pictureUserGreeting{
+    display: none;
+  }
+  .dashboardCont h1{
+    display: none;
+  }
+  .container{
+    grid-template-columns: 5rem 1fr;
+}
+
+
+.textTrend{
+        grid-template-columns: 1fr ;
+  }
+    .textTrend div img{
+    
+        display: none;
+    }
 }
 
